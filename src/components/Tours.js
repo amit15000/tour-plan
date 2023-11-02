@@ -1,17 +1,17 @@
 import React from "react";
+import Card from "./Card";
 
-function Tours() {
+function Tours({ tours }) {
   return (
     <div>
       <div>
         <h1>Plan with Amit</h1>
       </div>
       <div>
-        {/* <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card> */}
-        {/* use map */}
+        {tours.map((tour) => {
+          // props.tours.map((tour) => {
+          return <Card {...tours}></Card>;
+        })}
       </div>
     </div>
   );
