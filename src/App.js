@@ -1,10 +1,14 @@
-import logo from "./logo.svg";
+import { useState } from "react";
 import "./App.css";
+import Tours from "./components/Tours";
+import data from "./data";
 
 function App() {
+  const [tours, setTours] = useState(data);
+
   return (
-    <div className="App">
-      <p>Amit</p>
+    <div>
+      <Tours tours={tours}></Tours>
     </div>
   );
 }
