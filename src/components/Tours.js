@@ -8,7 +8,7 @@ function Tours({ tours }) {
         <h1>Plan with Amit</h1>
       </div>
       <div>
-        {tours.map((tour) => {
+        {tours.map((tours) => {
           // props.tours.map((tour) => {
           return <Card {...tours}></Card>;
         })}

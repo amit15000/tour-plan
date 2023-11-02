@@ -5,6 +5,7 @@ import data from "./data";
 
 function App() {
   const [tours, setTours] = useState(data);
+  console.log(data[0].image);
 
   return (
     <div>
