@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div>
-      <Tours tours={tours}></Tours>
+      <Tours allPlaceCollection={tours}></Tours>
     </div>
   );
 }
