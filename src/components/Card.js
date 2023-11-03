@@ -12,7 +12,7 @@ function Card({ id, name, image, info, price, removeTour }) {
       </div>
       <div className="description">
         {description}
-        <span onClick={() => setReadMore(!readMore)}>
+        <span className="read-more" onClick={() => setReadMore(!readMore)}>
           {readMore ? `Show Less` : `Read More`}
         </span>
       </div>
