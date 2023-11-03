@@ -39,6 +39,23 @@ body {
   flex-direction: column;
   border-radius: 10px;
   align-items: center;
-  box-shadow: rgb(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(139, 0, 0, 0.5) 1px 3px 100px;
   /* box-shadow: gba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.image {
+  width: 240px;
+  aspect-ratio: cover;
+}
+.tour-info {
+  margin: 20px 5px;
+}
+.tour-price {
+  color: #1faa59;
+  font-size: 1.3rem;
+}
+.tour-name {
+  font-size: 1.5rem;
+}
+.read-more {
+  color: #12b0e8;
 }
