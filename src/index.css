@@ -24,7 +24,7 @@ body {
 }
 .cards {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1300px;
@@ -61,7 +61,20 @@ body {
   color: #12b0e8;
   cursor: pointer;
 }
+.description {
+  text-align: justify;
+}
 .btn-red {
+  margin-top: 18px;
+  padding: 10px 80px;
+  border: 1px solid rgb(219, 66, 92);
+
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #b4161b21;
+  box-shadow: rgba(209, 104, 139, 0.87) 5px 3px 12px;
+}
+.btn-notI {
   margin-top: 18px;
   padding: 10px 80px;
   border: 1px solid rgb(219, 66, 92);
@@ -75,4 +88,27 @@ body {
   background-color: red;
   color: white;
   transition: ease-in 0.3s;
+}
+.btn-notI:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: ease-in 0.1s;
+}
+.refresh {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn-white {
+  margin: 18px;
+  padding: 10px 80px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.btn-white:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.2s;
 }

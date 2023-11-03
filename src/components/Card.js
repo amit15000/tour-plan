@@ -3,6 +3,14 @@ import React, { useState } from "react";
 function Card({ id, name, image, info, price, removeTour }) {
   const [readMore, setReadMore] = useState(false);
   const description = readMore ? info : `${info.substring(0, 200)}...`;
+  function handleClick() {
+    // Perform a Google search using the name prop
+    console.log(id);
+    const searchQuery = `https://www.google.com/search?q=${encodeURIComponent(
+      name
+    )}`;
+    window.open(searchQuery, "_blank");
+  }
   return (
     <div className="card">
       <img src={image} alt={name} className="image"></img>
@@ -16,7 +24,7 @@ function Card({ id, name, image, info, price, removeTour }) {
           {readMore ? `Show Less` : `Read More`}
         </span>
       </div>
-      <button className="btn-red" onClick={() => id}>
+      <button className="btn-red" onClick={handleClick}>
         Interested
       </button>
       <button className="btn-notI" onClick={() => removeTour(id)}>

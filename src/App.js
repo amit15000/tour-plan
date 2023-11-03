@@ -14,7 +14,7 @@ function App() {
     return (
       <div className="refresh">
         <h2>No tours left</h2>
-        <button className="button-white" onClick={() => setTours(data)}>
+        <button className="btn-white" onClick={() => setTours(data)}>
           Refresh
         </button>
       </div>
@@ -26,5 +26,5 @@ function App() {
     </div>
   );
 }
-
+]]
 export default App;
