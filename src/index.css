@@ -1,13 +1,114 @@
-body {
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.title {
+  font-size: 3rem;
+  margin: 6vh;
+  border: 7px dashed rgb(1, 17, 160);
+  border-radius: 20px;
+  padding: 1vh 5vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cards {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.card {
+  width: 400px;
+  height: max-content;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: rgba(139, 0, 0, 0.5) 1px 3px 100px;
+  /* box-shadow: gba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.image {
+  width: 240px;
+  aspect-ratio: cover;
+}
+.tour-info {
+  margin: 20px 5px;
+  text-align: center;
+}
+.tour-price {
+  color: #1faa59;
+  font-size: 1.3rem;
+}
+.tour-name {
+  font-size: 1.5rem;
+}
+.read-more {
+  color: #12b0e8;
+  cursor: pointer;
+}
+.description {
+  text-align: justify;
+}
+.btn-red {
+  margin-top: 18px;
+  padding: 10px 80px;
+  border: 1px solid rgb(219, 66, 92);
+
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #b4161b21;
+  box-shadow: rgba(209, 104, 139, 0.87) 5px 3px 12px;
+}
+.btn-notI {
+  margin-top: 18px;
+  padding: 10px 80px;
+  border: 1px solid rgb(219, 66, 92);
+
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #b4161b21;
+  box-shadow: rgba(209, 104, 139, 0.87) 5px 3px 12px;
+}
+.btn-red:hover {
+  background-color: red;
+  color: white;
+  transition: ease-in 0.3s;
+}
+.btn-notI:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: ease-in 0.1s;
+}
+.refresh {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn-white {
+  margin: 18px;
+  padding: 10px 80px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.btn-white:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.2s;
 }
