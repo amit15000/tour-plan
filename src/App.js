@@ -20,7 +20,6 @@ function App() {
       </div>
     );
   }
-
   return (
     <div className="App">
       <Tours tours={tours} removeTour={removeTour}></Tours>
